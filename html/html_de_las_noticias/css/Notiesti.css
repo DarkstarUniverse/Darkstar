@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: #000000;
+    height: 60px;
+    width: 100%;
+    
+}
+
+label.titulo_header {
+    color: white;
+    font-size: 23px;
+    line-height: 60px;
+    padding: 0 30px;
+    font-weight: bold; /*Negrilla*/
+    font-family: 'Fira Sans', sans-serif;
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+}
+nav ul li a {
+    background: white;
+    color: black;
+    font-size: 27px;
+    padding:11px 10px;
+    border-radius:3px;
+}
+
+.hovers {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a.hovers:hover{
+    background: #A9B0B7;
+    padding:11px 10px;
+    color:white;
+    
+}
+
+/*-----Cuerpo de la noticia------*/
+
+.title {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+
+.posicion {
+    text-align: center;
+    
+}
+
+
+
+.contenedor_del_contenido_de_la_noticia {
+    
+    margin: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 19px;
+    text-align: left;
+    
+}
+
+
+
+/*---------Pie de pagina----------*/
+
+.footer {
+    background: black;
+    
+}
+
+.title_footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 26px
+}
+
+.cop {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+}
+
+
+
+
+
+@media only screen and (max-width:700px){
+      
+    .contenedor {
+        height: 60px;
+    }
+    
+    
+    label.titulo_header {
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0 10px;
+
+}
+nav ul {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding:12px 18px;
+}
+
+
+a.hovers:hover{
+    padding:12px 18px;
+}
+    
+    .title {
+        font-size: 20px;
+    }
+    
+    .imagen {
+        width: 100%;
+        height: 240px;
+        padding: 9px;
+    }
+    
+    
+    
+    .body_news{
+        font-size: 17px;
+    }
+    
+    .contenedor_del_contenido_de_la_noticia {
+        margin: 10px
+    }
+    
+    
+    /*---------Pie de pagina----------*/
+
+
+.title_footer {
+    padding: 10px;
+    font-size: 22px
+}
+
+.cop {
+    padding: 10px;
+}
+    
+    .video {
+        width: 95%;
+        height: 210px;
+        
+    }
+    
+}
+
+
+
+
+    
+    
+
+    
+
+
+    
+   

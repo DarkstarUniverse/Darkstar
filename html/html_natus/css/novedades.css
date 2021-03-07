@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@300&family=Pragati+Narrow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montez&display=swap');
+
+
+:root{
+    --width: 250px;
+    --padding: 3px;
+    --hovercolor: rgb(64,64,64);
+    --width-collapsed: 50px;
+    --bgcolor: rgb(8,8,8);
+    
+}
+
+body {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: #000000;
+    height: 60px;
+    width: 100%;
+    
+}
+
+label.titulo_header {
+    color: white;
+    font-size: 33px;
+    line-height: 60px;
+    padding: 0 30px;
+    font-weight: bold; /*Negrilla*/
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+}
+nav ul li a {
+    background: white;
+    color: black;
+    font-size: 27px;
+    padding:11px 30px;
+    border-radius:3px;
+}
+
+.hovers {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a.hovers:hover{
+    background: #A9B0B7;
+    padding:11px 30px;
+    color:white;
+    
+    
+}
+
+
+/*------------Contenido-------------*/
+
+
+/*Menu de agencias*/
+
+
+.body-expanded{
+    margin-left: var(--width);
+}
+
+#main-container{
+    color: white;
+}
+
+#sidemenu{
+    background-color: var(--bgcolor);
+    color: white;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#sidemenu a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+/*Header*/
+
+#sidemenu #header {
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--hovercolor);
+    
+}
+
+#sidemenu #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 28px;
+    padding-left: 10px;
+    
+}
+
+#sidemenu #header #title, #sidemenu #header #menu-btn{
+    vertical-align: middle;
+}
+
+#sidemenu #header #menu-btn{
+    display: inline-block;
+}
+
+#sidemenu #header #menu-btn{
+    cursor: pointer;
+    padding: 16.249px 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#sidemenu #header #menu-btn:hover{
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #header #menu-btn .btn-hamburger{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+
+/*
+                Profile
+*/
+
+#sidemenu #profile{
+    border-bottom: solid 1px var(--hovercolor);
+    padding:  var(--padding) 0;
+    text-align: center;
+}
+
+#sidemenu #profile #photo{
+    box-sizing: border-box;
+    padding: var(--padding);
+    margin: 0 auto;
+}
+
+#sidemenu #profile #photo img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+#sidemenu #profile #photo, #sidemenu #profile #name{
+    font-size: 19.7px;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+} 
+
+
+/*Items*/
+
+
+
+
+#sidemenu #menu-items {
+    overflow: hidden;
+    
+    
+}
+
+
+
+#sidemenu #menu-items .items {
+    width: var(--width);
+
+}
+
+#sidemenu #menu-items .item .icon{
+    display: inline-flex;
+    display: flex;
+}
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .titles {
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    visibility: visible;
+    
+    
+
+}
+
+.sol  {
+    display: flex;
+}
+
+.titles {
+    padding-top: 15px
+}
+
+#sidemenu #menuitems .item a{
+    display: block;
+} 
+
+
+#sidemenu #menu-items .item  a:hover{
+    
+    background-color: var(--hovercolor);
+    display: block;
+}
+
+
+#sidemenu #menu-items .item .icon {
+    box-sizing: border-box;
+    padding: 10px;
+    width: var(--width-collapsed);
+    
+}
+
+#sidemenu #menu-items .item .icon img{
+    width: 100%;
+    
+}
+
+
+#sidemenu #menu.items .item .titles{
+    padding: var(--padding) 0;
+    
+}
+
+#sidemenu #menu-items .item sepa{
+    height: 1px;
+    border-bottom: solid 1px var(--hovercolor);
+    margin: 15px 0;
+}
+
+
+
+
+/*eexpanded*/
+
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.menu-expanded #header #title {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+
+.menu-expanded #header #title span{
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+}
+
+.menu-expanded #profile #photo {
+    width: 200px;
+}
+
+.menu-expanded #profile #name {
+    width: 100%;
+    
+}
+
+.menu-collapsed{
+    width: var(--width-collapsed);
+    
+}
+
+.menu-collapsed #header #title{
+    width: 0;
+    height: 0;
+    padding: 0;
+    padding: 0;
+    
+}
+
+.menu-collapsed #profile #name  {
+    display: none;
+}
+
+.menu-collapsed .item {
+    width: 100px;
+}
+
+.menu-collapsed .titles {
+    display: none;
+}
+
+
+.menu-collapsed #sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .titles {
+    
+
+  
+    
+}
+
+
+
+
+
+
+/*
+---------------------------CONTENIDO---------------------------
+*/
+
+
+/*Anuncio marketing*/
+
+.contenedorbig1 {
+    display: flex;
+    width: 100%;
+}
+
+
+.marketing {
+    width: 35%;
+    padding: 80px 30px 10px 60px;
+    margin-right: 10px;
+    
+}
+
+.anuncio {
+    font-family: 'Bad Script', cursive;
+    color: #ff8000;
+    text-align: center;
+    font-size: 40px;
+    line-height: 56px;
+    
+}
+
+.img-right {
+    width: 80%;
+    padding: 25px 10px 10px 80px;
+    
+}
+
+
+/*Aplicativos*/
+
+/*Target universal*/
+
+.card {
+    background: #AE47E5;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    
+}
+
+.card:hover{
+    background: #ff8000;
+}
+
+.titlecard {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Pragati Narrow', sans-serif;
+    
+    
+    
+}
+
+.logoapp{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    
+}
+
+.text{
+    text-align: justify;
+    font-family: 'Mada', sans-serif;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.download{
+    width: 100%;
+}
+
+
+
+/*--*/
+
+
+
+.aplicaciones {
+    width: 70%;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 30px;
+    padding-top: 0;
+}
+
+.titleapp{
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 50px;
+    color: #410356;
+   
+}
+
+.title2 {
+    color: black;
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive;
+     font-family: 'Montez', cursive;
+    color: #410356;
+    
+
+}
+
+
+
+.nivel1 {
+    display: flex;
+}
+
+.nivel2{
+    display: flex;
+}
+
+
+
+
+/*------Imagenes logos-----*/
+
+.natus{
+    transform: translateX(87%) translateY(-450%);
+    width: 13%
+}
+
+.rac {
+    transform: translateX(-17%) translateY(-320%);
+    width: 13%
+}
+
+.dark {
+    transform: translateX(-96%) translateY(-119%);
+    width: 20%
+}
+
+
+/*---------Pie de pagina----------*/
+
+.footer {
+    background: black;
+    direction: inherit
+    
+}
+
+.title_footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 26px
+}
+
+.cop {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+    
+    
+    .contenedor {
+    height: 55px;
+    width: 100%;
+    
+}
+
+label.titulo_header {
+    font-size: 27px;
+    line-height: 60px;
+    padding: 0 10px;
+    
+}
+    
+nav ul {
+    margin-right: 10px;
+}
+nav ul li {
+    line-height: 60px;
+}
+nav ul li a {
+    font-size: 17px;
+    padding:11px 6px;
+    margin-right: 6px;
+}
+a.hovers:hover{
+    padding:11px 30px;
+}
+
+    
+    
+    /*
+---------------------------CONTENIDO---------------------------
+*/
+
+
+/*Anuncio marketing*/
+
+.contenedorbig1 {
+    display: block;
+    width: 100%;
+}
+
+
+.marketing {
+    width: 100%;
+    padding: 20px;
+    margin-right: 0px;
+    
+}
+
+.anuncio {
+    font-size: 35px;
+    line-height: 48px;
+    
+}
+
+.img-right {
+    width: 100%;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    
+}
+
+    
+
+/*Aplicativos*/
+
+/*Target universal*/
+
+.card {
+    margin: 30px;
+    padding: 5px;
+}
+
+
+.logoapp{
+    width: 100%;
+    padding: 60px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    
+}
+
+
+    
+    
+
+.text{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.download{
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/*--*/
+
+
+.aplicaciones {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.titleapp{
+    font-size: 28px;
+}
+
+    
+.nivel1 {
+    display:block;
+}
+
+.nivel2{
+    display: block;
+}
+
+    
+
+.natus, .rac, .dark{
+    display: none;
+ }
+    
+    
+    
+    
+    
+/*---------Pie de pagina----------*/
+
+
+.title_footer {
+    padding: 10px;
+   font-size: 24px
+}
+
+.cop {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+}
+    
+}
+
+

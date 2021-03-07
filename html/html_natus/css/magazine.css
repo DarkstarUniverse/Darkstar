@@ -1,0 +1,327 @@
+/*--------Para añadir videos pagina CINCOPA  cuenta Ghoter*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+h2 {
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: #000000;
+    height: 60px;
+    width: 100%;
+    
+}
+
+label.titulo_header {
+    color: white;
+    font-size: 33px;
+    line-height: 60px;
+    padding: 0 30px;
+    font-weight: bold; /*Negrilla*/
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+}
+nav ul li a {
+    background: white;
+    color: black;
+    font-size: 27px;
+    padding:11px 30px;
+    border-radius:3px;
+}
+
+.hovers {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a.hovers:hover{
+    background: #A9B0B7;
+    padding:11px 30px;
+    color:white;
+    
+    
+}
+
+
+
+/*---------------Cuerpo de la pagina-----------*/
+
+.title-inicialMagazine{
+    font-family: 'Fira Sans', sans-serif;
+    margin-top:35px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    text-align: center;
+}
+
+/*Contenedor inicio proyecto*/
+
+.whatproyect{
+    background: #ff8;
+    width: 80%;
+    height: 310px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 140px;
+    margin-top: 70px;
+    
+}
+
+.titulo-whatproyect {
+    padding:21px 16px 10px 16px;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.bodytext-whatproyect{
+    font-family: 'Hind Guntur', sans-serif;
+    padding: 16px 27px;
+    font-size: 20px;
+    text-align:justify;
+    line-height: 26px;
+    
+}
+
+
+/*----------MAGAZINES----------*/
+
+.magazine-1  {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.magazine-2 {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/*end contenedores*/
+
+.title-magazine {
+    background: #ff8;
+    width: 25%;
+    height: 140px;
+    margin: 0px 100px 2px 100px;
+    
+}
+
+.fuente-maga {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    padding-bottom: 9px;
+}
+
+.fecha-magazin {
+    text-align: center;
+    font-size: 18px
+    
+    
+}
+
+.video {
+    width: 50%;
+    
+}
+
+
+/*end*/
+/*---------Pie de pagina----------*/
+
+.footer {
+    background: black;
+    direction: inherit
+    
+}
+
+.title_footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 26px
+}
+
+.cop {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+}
+
+@media only screen and (max-width:700px){
+    
+    
+    .contenedor {
+    height: 55px;
+    width: 100%;
+    
+}
+
+label.titulo_header {
+    font-size: 33px;
+    line-height: 60px;
+    padding: 0 10px;
+    
+}
+    
+nav ul {
+    margin-right: 10px;
+}
+nav ul li {
+    line-height: 60px;
+}
+nav ul li a {
+    font-size: 17px;
+    padding:11px 30px;
+}
+a.hovers:hover{
+    padding:11px 30px;
+}
+
+    
+    
+/*---------------Cuerpo de la pagina-----------*/
+
+.title-inicialMagazine{
+    margin: 30px 0px;
+    font-size: 45px;
+}
+
+/*Contenedor inicio proyecto*/
+
+.whatproyect{
+    width: 90%;
+    height: auto;
+    height: 370px;
+    margin: 20px;
+    
+}
+
+.titulo-whatproyect {
+    padding:21px 16px 10px 16px;
+    font-size: 22px;
+}
+
+.bodytext-whatproyect{
+    padding: 10px 12px;
+    width: 100%;
+    background: #ff8;
+    font-size: 15px;
+    line-height: 21px;
+    
+}
+
+
+/*----------MAGAZINES----------*/
+
+.magazine-1  {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.magazine-2 {
+    display: block;
+    margin-top: 140px
+}
+
+/*end contenedores*/
+
+
+.title-magazine {
+    background: #ff8;
+    width: 100%;
+    height: 94px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    
+}
+
+.fuente-maga {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    padding-bottom: 9px;
+    padding-top: 10px
+}
+
+.fecha-magazin {
+    text-align: center;
+    font-size: 18px
+    
+    
+}
+    
+.ajus {
+    margin-left: 25px;
+    margin-right: 25px;
+        
+    }
+    
+
+.videos {
+        width: 100%;
+        height: 290px;
+        
+    }
+
+/*end*/
+    
+    
+    
+    
+    
+    
+    
+/*---------Pie de pagina----------*/
+
+
+.title_footer {
+    padding: 10px;
+   font-size: 20px
+}
+
+.cop {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+}
+    
+    
+    
+    
+    
+    
+}
+
+
+
